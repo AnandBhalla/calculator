@@ -40,6 +40,9 @@ function handleinput(input) {
             str = '-' + str;
         }
     }
+    else if(input==="𝝅"){
+        str+="3.14";
+    }
     else {
         str += input;
     }
