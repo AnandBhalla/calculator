@@ -57,7 +57,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
     .calculator {
-      width: 85%;  
+      width: 100%;  
     }
     h1 {
       font-size: 1.5em;  
