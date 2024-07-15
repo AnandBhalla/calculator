@@ -40,11 +40,14 @@ function handleinput(input) {
             str = '-' + str;
         }
     }
-    else if(input==="𝝅"){
-        str+="3.14";
-    }
     else {
         str += input;
     }
     document.querySelector('.disp').value = str;
 }
+let back=document.querySelector(".backspace")
+back.addEventListener("click",()=>{
+        str=str.substr(0,str.length-1)
+        if(str[0]=='-'&&str.length==1)   str=""
+        document.querySelector('.disp').value = str;
+})
