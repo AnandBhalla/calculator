@@ -45,9 +45,9 @@ function handleinput(input) {
     }
     document.querySelector('.disp').value = str;
 }
-let back=document.querySelector(".backspace")
+let back=document.querySelector('#backspace')
 back.addEventListener("click",()=>{
-        str=str.substr(0,str.length-1)
+        str=str.substring(0,str.length-1)
         if(str[0]=='-'&&str.length==1)   str=""
         document.querySelector('.disp').value = str;
 })
